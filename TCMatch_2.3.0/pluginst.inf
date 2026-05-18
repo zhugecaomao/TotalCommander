@@ -1,0 +1,7 @@
+[plugininstall]
+description=extended quick search for Total Commander (32/64-bit)
+descriptiondeu=erweiterte Schnellsuche für den Total Commander (32/64-bit)
+descriptionhun=fejlett gyorskeresõ a Total Commander számára (32/64-bit)
+type=prg
+file=tcmatch.dll
+defaultdir=
