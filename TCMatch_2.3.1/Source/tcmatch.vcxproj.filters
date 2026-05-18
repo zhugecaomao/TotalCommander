@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d0100d88-5b06-4e89-9f32-37f5df015416}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{a56ac826-2dc9-4795-a597-9dfcc094e4d0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{a97431b4-337b-48fc-b4ad-9c396399e787}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tcmatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wdx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tcmatch.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="deelx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tcmatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wdx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icons\beginning_0.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icons\beginning_1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icons\case_0.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icons\case_1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icons\extend_0.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icons\extend_1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icons\favorite.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icons\negate_0.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icons\negate_1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tcmatch.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
