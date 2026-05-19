@@ -8,3 +8,4 @@ tcmatch.dll by ghisler dated 18/05/2026
 2. Pinyin filtering is working
 3. Allow zero file result
 4. tcmatch64.dll need to work together with tcmatch64.tbl
+5. This is the best version of tcmatch for now
