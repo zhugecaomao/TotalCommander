@@ -1,0 +1,6 @@
+[plugininstall]
+description=Quick Search with PinYin support for Total Commander (32/64-bit)
+descriptiondeu=Schnellsuche mit PinYin-Unterstützung Total Commander (32/64-bit)
+type=prg
+file=tcmatch.dll
+defaultdir=
