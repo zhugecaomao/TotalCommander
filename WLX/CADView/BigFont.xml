@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Fonts>
+  <Font Name="china.shx" Path="" CodePage="950"/>
+  <Font Name="hztxt.shx" Path="" CodePage="936"/>
+  <Font Name="HGTXT.SHX" Path="" CodePage="949"/>
+  <Font Name="FSDB.SHX" Path="" CodePage="936"/>
+  <Font Name="GOTHIC_SINGLEbig.shx" Path="" CodePage="949"/>
+  <Font Name="SMFS.SHX" Path="" CodePage="936"/>
+  <Font Name="HSG.shx" Path="" CodePage="949"/>
+  <Font Name="CAEDYT.SHX" Path="" CodePage="936"/>
+  <Font Name="HZLIB.SHX" Path="" CodePage="936"/>
+  <Font Name="JFS.SHX" Path="" CodePage="936"/>
+  <Font Name="HZDX.shx" Path="" CodePage="936"/>
+  <Font Name="HZXY.shx" Path="" CodePage="936"/>
+  <Font Name="HZ.shx" Path="" CodePage="936"/>
+  <Font Name="HZFS.shx" Path="" CodePage="936"/>
+  <Font Name="GBHZFS.shx" Path="" CodePage="936"/>
+  <Font Name="AMS_DX.shx" Path="" CodePage="936"/>
+  <Font Name="HT.shx" Path="" CodePage="936"/>
+  <Font Name="GHS.shx" Path="" CodePage="949"/>
+  <Font Name="GHD.shx" Path="" CodePage="949"/>
+</Fonts>

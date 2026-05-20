@@ -1,0 +1,87 @@
+body {
+	font-size: 10pt;
+	}
+a.local {
+	color: #4D88C4;
+}
+a.external {
+	color: #0000ff;
+}
+.email {
+	color: #6666FF;
+}
+.mainhead {
+	color: #335ACD;
+	font-size: 14pt;
+	font-weight: bold;
+}
+.mss {
+	color: #FF0000;
+	font-weight: bold;
+}
+.head {
+	color: #008000;
+	font-size: 14pt;
+	font-weight: bold;
+}
+.subhead {
+	color: #008000;
+	font-size: 12pt;
+	font-weight: bold;
+}
+.subhead2 {
+	color: #008000;
+	font-size: 10pt;
+	font-weight: bold;
+}
+.paragraph {
+	text-indent: 20px;
+	font-size: 10pt;
+	text-align: justify;
+	}
+.code {
+	font-family: Courier New, courier
+	}
+.indent {
+	margin-left: 20px;
+	font-size: 10pt;
+	text-align: justify;
+	}
+.list {
+	font-size: 10pt;
+	text-align: left;	/*when justify bugs in Opera 12.16*/
+	}
+.tablesmalltext {
+	font-size: 9pt;
+	}
+.tablenormaltext {
+	font-size: 10pt;
+	}
+.key {
+	color: #A52A2A;
+	font-weight: bold;
+}
+.inivalue {
+	color: #0000FF;
+	font-weight: bold;
+}
+.impot {
+	color: #FF7F50;
+	font-weight: bold;
+}
+.note {
+	font-weight: bold;
+	font-style: italic;
+}
+.noteimpot {
+	color: #FF7F50;
+	font-weight: bold;
+	font-style: italic;
+}
+.suboption {
+	margin-left: 25px;
+	}
+.new {
+	color: #FF00FF;
+	font-size: 8pt;
+	}

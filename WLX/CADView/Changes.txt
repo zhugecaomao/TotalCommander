@@ -1,0 +1,83 @@
+14.1.0.1
+- Improved import of DWG and DXF files
+- Improved export of DXF files
+- improved import of DWF, HPGL, CGM and SVG files
+- Bug fixes
+
+14.0.0.1
+- Improved import of DWG and DXF files
+- Improved export of DXF files
+- improved import of DWF, HPGL, CGM and SVG files
+- Bug fixes
+
+12.0.0.1
+- AutoCAD® DWG 2018 file format is supported.
+
+11.1.0.7
+- Autodetect DWG file formats
+- Bug fixes
+11.1.0.1
+- Bug fixes
+10.0.1.1
+- Bug fixes
+
+9.1.5.5
+- Bug with disabling file selection is fixed.
+
+9.1.5.4
+- Viewing of files that are opened in AutoCAD® is supported.
+
+9.1.5.2
+- Bug fixes
+
+9.1.5.1
+- AutoCAD® DWG 2013 file format is supported.
+- Total Commander x64 support.
+- Bug fixes.
+
+8.0.7
+- Bugs fixed.
+
+7.2.5
+- AutoCAD® DWG 2010 file format is supported. 
+- Multiselect and changing layer properties
+- Bugs fixed.
+
+7.0
+- Accelerated rendering on zoom.
+- Advanced associations.
+- The possibility of using SHX paths with TC`s Environment variables (for example: %COMMANDER_PATH%).
+- The possibility change search paths of Xrefs.
+- Lineweight switch.
+- Support of Autodesk Binary DXF file format has been added. 
+- Complex line types support has been added. 
+- New CAD entity is supported - WIPEOUT. 
+- New CAD entity is supported - MLINE. 
+- New CAD entity is supported - HELIX. 
+- Support of IMAGE entity with clipping. 
+- Bugs fixed
+
+6.1
+- AutoCAD™ DWG 2007 file format is supported. 
+- JPEG conversion settings are available.
+- Conversion settings: defining DPI, color depth.
+- Full sceen mode (Enter key).
+- Viewing TIFF files improved.
+- Bugs fixed.
+
+5.2.5
+- Viewing of HPGL files became significantly faster. Requirements for memory lowered in 2 .. 10 times. 
+- Support for BigFonts.
+- SHX support: 
+  - allows setting SHX pathes;
+  - when viewing CAD files if necessary SHX fonts are not found the default SHX fonts will be used.
+- Support for DWG v. 9, 10 and 11.
+- Forward references in DWG12.
+- Bugs fixed for PolyFace in DWG12 and for gradient filling in HPGL.
+- Bugs fixed for DWG/DXF, HPGL, SVG and CGM file formats.
+- Proxy settings are available.
+- CAD files can be rotated by necessary angle when loading.
+- Allows printing only visible area of the drawing.
+
+5.011
+Bug fixings

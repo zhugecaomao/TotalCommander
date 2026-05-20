@@ -1,0 +1,555 @@
+﻿<html>
+<head>
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>M'sS AppLoader&nbsp;&ndash; Help</title>
+</head>
+<body bgcolor="#F8F8FF">
+<font face="arial">
+<span class="mainhead"><center>AppLoader 0.9.6.3</center></span>
+<center>Applications loader</center>
+<center>Lister plugin for Total Commander (x32, x64)</center>
+<center>&copy; <span class="mss">M</span>aximus<span class="mss">'s</span> <span class="mss">S</span>olutions 2006-2014</center>
+<center><a href="http://maximus.in.ua" target="_blank">http://maximus.in.ua</a></center>
+<center><a href="mailto:support@maximus.in.ua" class="email">support@maximus.in.ua</a> <a href="mailto:mxmus@rambler.ru" class="email">mxmus@rambler.ru</a></center>
+<br />
+
+<hr width="95%" size="1" noshade>
+<span class="head"><center>Contents</center></span>
+<div style="margin-left: 60px; font-size: 10pt;">
+	<a href="#description" class="local"><b>Description</b></a><br />
+	<a href="#install" class="local"><b>Installation</b></a><br />
+	<a href="#using" class="local"><b>Examples of convenient use</b></a><br />
+	<a href="#limit" class="local"><b>Limitations</b></a><br />
+	<a href="#config" class="local"><b>Configuration</b></a><br />
+	<a href="#history" class="local"><b>Version history</b></a>
+</div>
+<br />
+
+<hr width="95%" size="1" noshade>
+<a name="description" /><span class="head"><center>Description</center></span>
+
+<div class="paragraph">This plugin allows you to open chosen files using the associated applications in cases where it is possible to use the internal viewer (Lister).</div>
+<div class="paragraph">The main feature of this plugin is that you can open the file in any application of these modal windows Total Commander as “Find Files” and “Synchronize directories” as well as in the Overwrite dialog, which can not be done by any other means.</div>
+<div class="paragraph">No less pleasing is provided feature to run associated application by means hotkey for an already opened file in the Lister.</div>
+<div class="paragraph">Also plugin can work with selected files, has a flexible configuration of execute conditions, and feature to disable using the Scroll Lock key.</div>
+
+<br />
+
+<hr width="95%" size="1" noshade>
+<a name="install" /><span class="head"><center>Installation</center></span>
+<div class="paragraph"><span class="subhead">Automatic</span></div>
+<ol class="list">
+	<li>Enter in the archive with the plugin (<span class="key">Ctrl+PgDn</span>) and Total Commander will ask you to install it</li>
+	<li>Follow the instructions of Total Commander</li>
+</ol>
+<div class="paragraph"><span class="subhead">Manual</span></div>
+<ol class="list">
+	<li>Unpack the contents of the archive to a separate directory</li>
+	<li>Install plugin:</li>
+		<ul type="circle">
+			<li>{ Configuration → Options... → Plugins → Lister plugins → Configure }</li>
+			<li>Add AppLoader.wlx (AppLoader.wlx64) to the plugins list</li>
+		</ul>
+	<li>Move AppLoader on the top of the plugins list</li>
+</ol>
+
+
+<hr width="95%" size="1" noshade>
+<a name="using" /><span class="head"><center>Examples of convenient use</center></span>
+<ul class="list">
+	<li>Use in modal windows.<br />
+	You no longer need to run another copy of Total Commander, if the need arises, for example, open a document in Microsoft Word or play video with the handy player in “Find Files”, “Synchronize directories” or Overwrite dialog. Just configure associations for convenient applications.</li>
+	<li>Use to open files from FTP-servers and WFX-plugins.<br />
+	You no longer need to pre-copy file on the local disk to view or extract the contents. Just configure associations for convenient archiver.</li>
+	<li>Working with selected files.<br />
+	You need to open a group of files in separate tabs of text editor or print them in one motion? Just select the appropriate application and correctly configure the associations and command line parameters.</li>
+	<li>Association application with folders.<br />
+	Want to open in a player the entire season of your favorite series? Make sure that your player is able to work with folders and set associations.</li>
+	<li>Launching applications for already opened file in Lister.<br />
+	You have viewed the file in Lister and realized that you need to edit it? Just assign hotkey to launch the associated application and do not forget to use it :)</li>
+	<li>Copy searched text to clipboard.<br />
+	You already have appreciated all plugin features and use it to the full in “Find Files” dialog? Then this function is for you. If you're searched for files with option “Find text” plugin will automatically copy the search text to the clipboard, and you can paste it later in the search dialog of associated application.</li>
+</ul>
+
+<hr width="95%" size="1" noshade>
+<a name="limit" /><span class="head"><center>Limitations</center></span>
+<ul class="list">
+	<li>Operability of all the features may be guaranteed only for final versions of Total Commander 8.0, 8.01, бета-версии 8.5b15. For previous versions there is a significant probability of losing functional, for following versions the functional loss is also not excluded.</li>
+	<li>Launch the associated application will be performed outside the Lister window (both in normal and in the quick view).</li>
+	<li>When plugin executed from archive/FTP-server/WFX-plugin, due to the specific behavior of Total Commander, selection can not be processed completely and will be processed only the first selected file.</li>
+</ul>
+
+<hr width="95%" size="1" noshade>
+<a name="config" /><span class="head"><center>Configuration</center></span>
+
+<div class="paragraph">The plugin can be configured by editing the file AppLoader.ini which should be in plugin installation folder. Create this file manually or copy from folder IniSample. If this file is not found when plugin is loading into memory, it will be copied automatically from the folder IniSample.</div>
+<div class="paragraph">The following are the keys to the configuration file with descriptions. The key value specified after the '=' is the default value, ie value that will be used if key is not exists in the file.</div>
+<br />
+
+
+<table bgcolor="#FCFCFF" width="95%" border="1" cellspacing="0" cellpadding="4" align="center" class="tablenormaltext">
+<tr bgcolor="#FFFAF0">
+	<td><b><center>Section</center></b></td>
+	<td><b><center>Key</center></b></td>
+	<td colspan=2><b><center>Description</center></b></td>
+</tr>
+<tr>
+	<td bgcolor="#F8F8FF" rowspan=20 align="center" valign="top"><b>[Options]</b></td>
+	<td bgcolor="#F8F8FF" colspan=3><center><b>Configuring plugin behavior</b></center></td>
+</tr>
+<tr>
+	<td>ReadOptionsEveryTime=0</td>
+	<td colspan=2>Specifies when the settings are read from this section:<br />
+		<div class="suboption"><span class="inivalue">0</span>:&nbsp;only when the plugin is loaded into memory;</div>
+		<div class="suboption"><span class="inivalue">1</span>:&nbsp;for each access to the plugin.</div>
+	</td>
+</tr>
+<tr>
+	<td>ScrollLockControl=0</td>
+	<td colspan=2>Enables control with Scroll Lock key:<br />
+		<div class="suboption"><span class="inivalue">0</span>:&nbsp;plugin is always on;</div>
+		<div class="suboption"><span class="inivalue">1</span>:&nbsp;enable plugin by Scroll Lock key.</div>
+	</td>
+</tr>
+<tr>
+	<td>ModalOnly=0</td>
+	<td colspan=2>Controls plugin executing depending on the type of window:<br />
+		<div class="suboption"><span class="inivalue">1</span>:&nbsp;execute only in modal windows (“Find Files”, “Synchronize directories”, Overwrite dialog);</div>
+		<div class="suboption"><span class="inivalue">0</span>:&nbsp;execute conditions defined by keys FindFiles, SyncDirs, TCWindow, QuickView, Lister4, OverWrite.</div>
+	</td>
+</tr>
+<tr>
+	<td>FindFiles=1</td>
+	<td rowspan=7 width=180>If ModalOnly=0, controls plugin executing<br />(<span class="inivalue">1</span>:&nbsp;allow; <span class="inivalue">0</span>:&nbsp;disallow)</td>
+	<td>in window “Find Files”.</td>
+</tr>
+<tr>
+	<td>SyncDirs=1</td>
+	<td>in window “Synchronize directories”.</td>
+</tr>
+<tr>
+	<td>TCWindow=1</td>
+	<td>in main window of Total Commander.</td>
+</tr>
+<tr>
+	<td>QuickView=0</td>
+	<td>with quick view.</td>
+</tr>
+<tr>
+	<td>Lister4=0</td>
+	<td>in Lister when activated view mode with plugins (key <span class="key">4</span>) or when switching between files (keys <span class="key">N</span> and <span class="key">P</span>).</td>
+</tr>
+<tr>
+	<td>ListerDirectly=0</td>
+	<td>when starts Lister without Total Commander main window (ie from command line with parameter /S=L).</td>
+</tr>
+<tr>
+	<td>OverWrite=1</td>
+	<td>in Overwrite dialog.</td>
+</tr>
+<tr>
+	<td>IfIsExtOnly=0</td>
+	<td colspan=2>Controls plugin executing depending on the file extension:<br />
+		<div class="suboption"><span class="inivalue">1</span>:&nbsp;execute only for files with extensions, defined in section Editor of file AppLoader.ini or in section Extensions of Total Commander configuration file (see key UseTCExtensions);</div>
+		<div class="suboption"><span class="inivalue">0</span>:&nbsp;execute for files with any extension.</div>
+	</td>
+</tr>
+<tr>
+	<td>ListerState=1</td>
+	<td colspan=2>Specifies the action on the Lister window (including quick view) after plugin executing:<br />
+		<div class="suboption"><span class="inivalue">0</span>:&nbsp;leave open;</div>
+		<div class="suboption"><span class="inivalue">1</span>:&nbsp;when file was extracted/downloaded from archive/FTP-server/WFX-plugin: normal Lister window&nbsp;&ndash; hide, quick view window&nbsp;&ndash; leave open; in other cases&nbsp;&ndash; close;</div>
+		<div class="suboption"><span class="inivalue">2</span>:&nbsp;close anyway.</div>
+	<span class="note">Note</span>: When opening a file in Lister from archive/FTP-server/WFX-plugin Total Commander previously extract/download it to temporary directory and delete immediately after closing the Lister. In order for plugin to give applications the ability to work with these files, there is need to keep the Lister window unclosed. The key value of <span class="inivalue">1</span> is provided specifically for such situations&nbsp;&ndash; and the file will open, and the Lister window will not interfere.<br />
+	<span class="note">Note</span>: When plugin executed directly in the Lister window (option Lister4=1), any actions with the window will not be made.
+	</td>
+</tr>
+<tr>
+	<td>NextPlugin=1</td>
+	<td>If ListerState=0</td>
+	<td>Specifies the behavior for the case where Lister is left open after plugin executing:<br />
+		<div class="suboption"><span class="inivalue">1</span>:&nbsp;switch Lister to the next appropriate plugin;</div>
+		<div class="suboption"><span class="inivalue">0</span>:&nbsp;leave AppLoader in Lister.</div>
+	</td>
+</tr>
+<tr>
+	<td>ParamsMode=1</td>
+	<td colspan=2>Defines how to pass command line parameters to the applications (see <a href="#params_mode" class="local">explanations and examples<a>):<br />
+		<div class="suboption"><span class="inivalue">0</span>:&nbsp;Parameters by application. Files divides into groups depending on association with applications. Starts separate copy of application for each group. Command line parameters are taken from section Editor (key - full name of application).</div>
+		<div class="suboption"><span class="inivalue">1</span>:&nbsp;Parameters by extension. Start type defined by key ParamsByExtMode.</div>
+</td>
+</tr>
+<tr>
+	<td>ParamsByExtMode=0</td>
+	<td>If ParamsMode=1</td>
+	<td>Defines how to pass command line parameters to the applications (see <a href="#params_mode" class="local">explanations and examples<a>):<br />
+		<div class="suboption"><span class="inivalue">0</span>:&nbsp;Files divides into groups depending on association with applications. Starts separate copy of application for each group. Command line parameters are taken from section Editor (key that contains extension of first file in group).</div>
+		<div class="suboption"><span class="inivalue">1</span>:&nbsp;Files divides into groups depending on extension. Starts separate copy of application for each group. Command line parameters are taken from section Editor (key that contains extension of group files).</div>
+		<div class="suboption"><span class="inivalue">2</span>:&nbsp;Starts separate copy of application for each file. Command line parameters are taken from section Editor (key that contains file extension).</div>
+	<span class="note">Note</span>: If the extension is present in several keys, preference will be given to the key, which contains only one extension, if such key is not present will be used first key that contains the required extension.
+	</td>
+</tr>
+<tr>
+	<td>UseTCExtensions=0</td>
+	<td colspan=2>Defines source of application associations by extensions:<br />
+		<div class="suboption"><span class="inivalue">1</span>:&nbsp;section Extensions in Total Commander configuration file;</div>
+		<div class="suboption"><span class="inivalue">0</span>:&nbsp;section Editor in file AppLoader.ini.</div>
+</td>
+</tr>
+<tr>
+	<td>CopySearchTextToClip=1</td>
+	<td colspan=2>When plugin execute in dialog “Find Files” this option allows to copy search text into the clipboard, if checked search option “Find text”:<br />
+		<div class="suboption"><span class="inivalue">1</span>:&nbsp;enable function;</div>
+		<div class="suboption"><span class="inivalue">0</span>:&nbsp;disable function.</div>
+	</td>
+</tr>
+<tr>
+	<td>DefaultEditor=notepad</td>
+	<td>If IfIsExtOnly=0</td>
+	<td>Default application. <a href="#name_notes" class="local">Name</a> of the application which will run for file types (extensions) that do not have their own application.
+	</td>
+</tr>
+<tr>
+	<td>DefaultEditor_params=</td>
+	<td>If IfIsExtOnly=0 and ParamsMode=0</td>
+	<td>Command line <a href="#params_notes" class="local">parameters</a> of default application specified in the key DefaultEditor.</td>
+</tr>
+
+
+<tr>
+	<td bgcolor="#F8F8FF" rowspan=6 align="center" valign="top"><b>[Editor]</b></td>
+	<td bgcolor="#F8F8FF" colspan=3><center><b>Names and command line parameters of applications</b></center></td>
+</tr>
+<tr>
+	<td>aaa=</td>
+	<td colspan=2><a href="#name_notes" class="local">Name</a> of application which is associated for files with <a href="#ext_notes" class="local">extension</a> aaa.</td>
+</tr>
+<tr>
+	<td>bbb,ccc=</td>
+	<td colspan=2><a href="#name_notes" class="local">Name</a> of application which is associated for files with <a href="#ext_notes" class="local">extensions</a> bbb and ccc.</td>
+</tr>
+<tr>
+	<td>aaa_params=</td>
+	<td colspan=2>Command line <a href="#params_notes" class="local">parameters</a> of application which is associated for files with <a href="#ext_notes" class="local">extension</a> aaa.</td>
+</tr>
+<tr>
+	<td>bbb,ccc_params=</td>
+	<td colspan=2>Command line <a href="#params_notes" class="local">parameters</a> of application which is associated for files with <a href="#ext_notes" class="local">extensions</a> bbb and ccc.</td>
+</tr>
+<tr>
+	<td>FullAppName=</td>
+	<td colspan=2>Command line <a href="#params_notes" class="local">parameters</a> for application with full name FullAppName.</td>
+</tr>
+
+
+<tr>
+	<td bgcolor="#F8F8FF" rowspan=5 align="center" valign="top"><b>[HotKeys]</b></td>
+	<td bgcolor="#F8F8FF" colspan=3>
+		<center><b>Hot keys</b></center>
+		See <a href="KeyCodes.html" target="_blank">list of key codes</a>. If code is not defined hot key will not assign. Can be used both decimal and hexadecimal code values. For example, <span class="key">F12</span>&nbsp;&ndash; <span class="inivalue">123</span> or <span class="inivalue">0x7B</span>.<br />
+		Available modifier values:&nbsp;<span class="inivalue">A</span>&nbsp;&ndash; Alt, <span class="inivalue">C</span>&nbsp;&ndash; Control, <span class="inivalue">S</span>&nbsp;&ndash; Shift. Sample:&nbsp;<span class="inivalue">CAS</span>&nbsp;&ndash; Control+Alt+Shift.
+	</td>
+</tr>
+<tr>
+	<td>AppFromLister_key=</td>
+	<td colspan=2>Code of hot key (for example, <span class="inivalue">123</span>&nbsp;&ndash; <span class="key">F12</span>), which can be used in Lister to open the file with associated application.</td>
+</tr>
+<tr>
+	<td>AppFromLister_mod=</td>
+	<td colspan=2>Modifier for hotkey specified in the key AppFromLister_key.</td>
+</tr>
+<tr>
+	<td>DefSysAppFromLister_key=</td>
+	<td colspan=2>Code of hot key (for example, <span class="inivalue">0x78</span>&nbsp;&ndash; <span class="key">F9</span>), which can be used in Lister to open the file with associated in OS application.</td>
+</tr>
+<tr>
+	<td>DefSysAppFromLister_mod=</td>
+	<td colspan=2>Modifier for hotkey specified in the key DefSysAppFromLister_key.</td>
+</tr>
+
+
+<tr>
+	<td bgcolor="#F8F8FF" rowspan=6 align="center" valign="top"><b>[TCPos]</b></td>
+	<td bgcolor="#F8F8FF" colspan=3>
+		<center><b>Positions of Total Commander interface elements</b></center>
+		If CopySearchTextToClip=1 these keys used to search for interface elements by their location. Plugin will search for an element between positions plus/minus 5 pixels from the specified value.
+	</td>
+</tr>
+<tr>
+	<td>IsSearchTextLeft=5</td>
+	<td colspan=2 rowspan=2>Position of top left corner of option “Find text” in dialog “Find Files” (for Total Commander 8.01x32, 8.50b5x32:&nbsp;<span class="inivalue">5</span>; <span class="inivalue">116</span>), 8.50b5x64:&nbsp;<span class="inivalue">5</span>; <span class="inivalue">114</span>).</td>
+</tr>
+<tr>
+	<td>IsSearchTextTop=116</td>
+</tr>
+<tr>
+	<td>SearchTextLeft=85</td>
+	<td colspan=2 rowspan=2>Position of top left corner of field “Find text” in dialog “Find Files” (for Total Commander 8.01x32, 8.50b5x32, 8.50b5x64:&nbsp;<span class="inivalue">85</span>; <span class="inivalue">114</span>).</td>
+</tr>
+<tr>
+	<td>SearchTextTop=114</td>
+</tr>
+
+</table>
+
+<br />
+
+<a name="name_notes" />
+<div class="paragraph"><span class="note">Notes on file names</span>: If name of application is value but not a key (i.e. placed on the right of the '='), in its name:</div>
+<ul class="list">
+	<li>can be used environment variables such as %COMMANDER_PATH%</li>
+	<li>can be used relative paths</li>
+	<li>are allowed to specify file name without path, if executive application file is located in plugin directory, system directory, Windows directory or in directory which defined in system variable PATH</li>
+</ul>
+
+<a name="ext_notes" />
+<div class="paragraph"><span class="note">Notes on file extensions</span>: Besides the usual extensions also can be used the special extensions:</div>
+<ul class="list">
+	<li>extension <i>:dir</i> for folders (for example, <span class="code">htm,html,:dir,xml=C:\Program Files\Opera\opera.exe</span>)</li>
+	<li><i>empty</i> extension (for example, <span class="code">txt,,ini=notepad</span>, <span class="code">,txt,ini=notepad</span> or <span class="code">=notepad</span>, but not <span class="code">txt,ini,=notepad</span>)</li>
+</ul>
+
+<a name="params_notes" />
+<div class="paragraph"><span class="note">Notes on command line parameters</span>:</div>
+<ul class="list">
+	<li>When using file names in the parameters are actual notes <a href="#name_notes" class="local">above</a>.</li>
+	<li>
+	Use special symbol %1 in string of command line parameters (keys of section Editor, key DefaultEditor_params of section Options) to define in which position name(s) of file(s) will placed.
+	<table width="95%" border="0" cellspacing="0" cellpadding="4" align="left" class="tablenormaltext" style="margin-left: 25px;">
+	<tr>
+		<td valign="top">Sample:</td>
+		<td>For file <span class="code">&lt;file&gt;</span>, opening in application <span class="code">&lt;application&gt;</span>, is defined the following string of command line parameters: <span class="code">&lt;parameters_1&gt;</span> %1 <span class="code">&lt;parameters_2&gt;</span>.
+		<br />
+		The result will be executing the command: <span class="code">&lt;application&gt; &lt;parameters_1&gt; &lt;file&gt; &lt;parameters_2&gt;</span>.
+		</td>
+	</tr>
+	</table>
+	</li>
+</ul>
+<br />
+<br />
+<br />
+
+
+<a name="params_mode" />
+
+<div class="paragraph"><span class="note">Explanations on work keys ParamsMode and ParamsByExtMode</span>.</div>
+<div class="paragraph">When executed plugin for a single file (that is, from modal dialogs, Lister or for file under cursor in Total Commander file window) will be started only one application. In this case, if ParamsMode=1, then for each of the values ​​ParamsByExtMode passing the command line parameters to application will be performed the same way&nbsp;&ndash; as an exception in the case of a single file.</div>
+<div class="paragraph">If the executing occurs from file window of Total Commander, while more than one file is selected, there are several variants of forming commands to run one or more applications. This example illustrates how the plugin works at different values of keys ParamsMode and ParamsByExtMode.</div>
+
+
+<div class="paragraph"><i>In active panel in the directory D:\files\ selected the following files</i>:</div>
+<div class="code" style="margin-left: 30px;">
+	file0.ext0<br />
+	file1.ext0<br />
+	file0.ext1<br />
+	file1.ext1<br />
+	file0.ext2
+</div>
+<div class="paragraph"><i>In section Editor presents the following strings</i>:</div>
+<div class="code" style="margin-left: 30px;">
+	[Editor]<br />
+	ext1=C:\folder\dir\app0.exe<br />
+	ext0,ext2=D:\path\app1.exe<br />
+	ext1_params=-p1 -p2<br />
+	ext0,ext2_params=/key0<br />
+	ext0_params=/key1<br />
+	C:\folder\dir\app0.exe=-p3<br />
+	D:\path\app1.exe=/key3
+</div>
+<div class="paragraph"><i>Applications will be run this way</i>:</div>
+<div class="paragraph">1.&nbsp;If ParamsMode=0</div>
+<div class="code" style="margin-left: 30px;">
+	"D:\path\app1.exe" "D:\files\file0.ext0" "D:\files\file1.ext0" "D:\files\file0.ext2" /key3<br />
+	"C:\folder\dir\app0.exe" "D:\files\file0.ext1" "D:\files\file1.ext1" -p3
+</div>
+<div class="paragraph">2.&nbsp;If ParamsMode=1, ParamsByExtMode=0</div>
+<div class="code" style="margin-left: 30px;">
+	"D:\path\app1.exe" "D:\files\file0.ext0" "D:\files\file1.ext0" "D:\files\file0.ext2" /key1<br />
+	"C:\folder\dir\app0.exe" "D:\files\file0.ext1" "D:\files\file1.ext1" -p1 -p2
+</div>
+<div class="paragraph">3.&nbsp;If ParamsMode=1, ParamsByExtMode=1</div>
+<div class="code" style="margin-left: 30px;">
+	"D:\path\app1.exe" "D:\files\file0.ext0" "D:\files\file1.ext0" /key1<br />
+	"C:\folder\dir\app0.exe" "D:\files\file0.ext1" "D:\files\file1.ext1" -p1 -p2<br />
+	"D:\path\app1.exe" "D:\files\file0.ext2" /key0
+</div>
+<div class="paragraph">4.&nbsp;If ParamsMode=1, ParamsByExtMode=2</div>
+<div class="code" style="margin-left: 30px;">
+	"D:\path\app1.exe" "D:\files\file0.ext0" /key1<br />
+	"D:\path\app1.exe" "D:\files\file1.ext0" /key1<br />
+	"C:\folder\dir\app0.exe" "D:\files\file0.ext1" -p1 -p2<br />
+	"C:\folder\dir\app0.exe" "D:\files\file1.ext1" -p1 -p2<br />
+	"D:\path\app1.exe" "D:\files\file0.ext2" /key0
+</div>
+<div class="paragraph">Keep in mind, if the application is run with multiple files (for example, <span class="code">"D:\path\app1.exe" "D:\files\file0.ext0" "D:\files\file1.ext0" "D:\files\file0.ext2"</span>), all of them will be opened in this application only if it is multiple document application. Otherwise, the application will only open the first file.</div>
+
+<br />
+<div class="subhead"><center>Configuration of Total Commander</center></div>
+<div class="paragraph">AppLoader behavior in some cases may depend on the Total Commander settings, made ​​through its configuration dialog or configuration file.</div>
+<br />
+<table bgcolor="#FCFCFF" width="95%" border="1" cellspacing="0" cellpadding="4" align="center" class="tablenormaltext">
+<tr bgcolor="#FFFAF0">
+	<td><b><center>Configuration dialog</center></b></td>
+	<td><b><center>Configuration file</center></b></td>
+	<td><b><center>Description</center></b></td>
+</tr>
+<tr>
+	<td>Page “Edit/View”, options in group “Viewer for F3”</td>
+	<td>Section [Configuration], key Viewertype</td>
+	<td>Used by plugin to determine the behavior in the presence of selection in the Total Commander file panels.</td>
+</tr>
+
+<tr>
+	<td>Page “Edit/View”, button “Associations...”</td>
+	<td>Section [Extensions]</td>
+	<td>Can be used by plugin for replacement section Editor of own configuration file.</td>
+</tr>
+
+<tr>
+	<td>&nbsp;</td>
+	<td>Section [Configuration], key GetTextMode</td>
+	<td>Used by plugin to determine the format in which Total Commander will return a list of selected files. When the key value is 0, plugin will not work with the selected files whose names contain spaces.</td>
+</tr>
+</table>
+<br />
+<div class="paragraph">Full description of these settings can be found in the Total Commander help file.</div>
+
+<br />
+
+
+<hr width="95%" size="1" noshade>
+<a name="history" /><span class="head"><center>Version history</center></span>
+
+<span class="indent">[0.9.6.3] [12 Jan 2014]</span>
+<ul type="square" class="list">
+<li>Added: Support plugin executing when starts Lister, dialogs “Find Files” and “Synchronize directories” without Total Commander main window (ie from command line with parameters /S=L, /S=F или /S=S).</li>
+<li>Added: Key [Options], ListerDirectly=0: Controls plugin executing when starts Lister without Total Commander main window.</li>
+</ul>
+
+<span class="indent">[0.9.6.2] [07 Oct 2013]</span>
+<ul type="square" class="list">
+<li>Added: 64-bit plugin version.</li>
+<li>Changed: When searching for the Total Commander interface elements uses a range of values ​​plus/minus 5 pixels from the values ​​specified in the keys of section [TCPos].</li>
+</ul>
+
+<span class="indent">[0.9.6.1b] [22 Oct 2012]</span>
+<ul type="square" class="list">
+<li>Fixed: Association of application with empty extension did not always work.</li>
+<li>Fixed: With ReadOptionsEveryTime=0 did not work disabling of plugin with ScrollLock key in all cases except the first execution.</li>
+<li>Fixed: At the first execution of plugin some applications have not been moved to the foreground.</li>
+</ul>
+
+<span class="indent">[0.9.6.1a] [23 Sep 2012]</span>
+<ul type="square" class="list">
+<li>Fixed: Problems with applications whose names contain the point.</li>
+</ul>
+
+<span class="indent">[0.9.6.1] [15 Sep 2012]</span>
+<ul type="square" class="list">
+<li>Added: Key [Options], DefaultEditor_params: Specifies command line parameters for default application, used if IfIsExtOnly=0 and ParamsMode=0.</li>
+<li>Added: Support of environment variables like %COMMANDER_PATH% also in command line parameters.</li>
+<li>Fixed: Hot keys did not work to start the application from Lister when used more than one modifier.</li>
+<li>Fixed: Keys [Options], ScrollLockControl and ModalOnly: Default values did not match to the description in the help file.</li>
+</ul>
+
+<span class="indent">[0.9.6.0] [07 Sep 2012]</span>
+<ul type="square" class="list">
+<li>Added: Unicode support: File names, clipboard.</li>
+<li>Added: Section [Editor]: Special extension ":dir" to allow to associate folders with the application.</li>
+<li>Added: Key [Options], ReadOptionsEveryTime: If the value is 0 (by default) options will be read only when the plugin is loaded into memory, otherwise&nbsp;&ndash; for each access to the plugin.</li>
+<li>Changed/Fixed: Improved work with files that are loaded from the archives, FTP-servers and WFX-plugins.</li>
+<li>Changed: When ListerState=1 Lister window will be hidden only if the file is opened from the archive, FTP-server or WFX-plugin (i.e. placed into a temporary directory of Total Commander), otherwise the window will simply close.</li>
+<li>Changed/Fixed: Getting a list of selected files is performed taking into account the key of Total Commander 8.0 configuration file&nbsp;&ndash; [Configuration], GetTextMode. For previous versions of Total Commander plugin will not work with the selected files.</li>
+<li>Changed/Fixed: Dialog “Find Files”: Copy to clipboard of the search text is now working (in the dialog has changed class name of the text field).</li>
+<li>Changed: Dialog “Find Files”: Copy to clipboard the search text is not performed if the string is empty or it could not be obtained.</li>
+<li>Changed: The path of active panel to work with the selected files obtained by means of WM_COPYDATA message.</li>
+<li>Changed: File AppLoaderState.ini is no longer used.</li>
+</ul>
+
+<span class="indent">[0.9.5.0] [21 Jun 2009]</span>
+<ul type="square" class="list">
+<li>Changed: If value of key [Options], ListerState=1 Lister window now not just minimizes, it completely hides.</li>
+<li>Fixed: Fixed bugs with memory when load several copies of Lister.</li>
+</ul>
+
+<span class="indent">[0.9.0.0] [03 Apr 2008]</span>
+<ul type="square" class="list">
+<li>Added: Key [Options], ListerState: Minimizing of Lister window in order to load file by application directly from archive/FTP-server/WFX-plugin (key [Options], CloseLister now is not used).</li>
+<li>Changed: Key [Options], WorkWithSelFiles now is not used; instead analyzing key [Configuration], Viewertype of Total Commander configuration file.</li>
+<li>Changed: To accelerate work the settings are read only when plugin loading to memory, rather than at each access to it.</li>
+</ul>
+
+<span class="indent">[0.8.0.0] [15 Mar 2007]</span>
+<ul type="square" class="list">
+<li>Added: Feature to specify where to insert file(s) name(s) in application command line parameters with key %1.</li>
+</ul>
+
+<span class="indent">[0.7.5.0] [06 Mar 2007]</span>
+<ul type="square" class="list">
+<li>Added: Section [HotKeys]: Feature to start associated in OS application with hot key for file which is opened in the Lister.</li>
+<li>Fixed: Fixed bugs with hot keys.</li>
+<li>Fixed: Solved conflict of files/applications when opened several copies of Lister.</li>
+</ul>
+
+<span class="indent">[0.7.0.0] [28 Dec 2006]</span>
+<ul type="square" class="list">
+<li>Added: Section [Editor], keys [Options], ParamsMode and ParamsByExtMode: Rich setting for parameters of application command lines.</li>
+<li>Added: Section [Editor]: Feature to specify extensions separated by commas in the same string.</li>
+<li>Added: Key [Options], WorkWithSelFiles: Enables working with selected files.</li>
+<li>Added: Key [Options], OverWrite: Controls executing from Overwrite dialog.</li>
+<li>Added: Section [TCPos]: Position to locate Total Commander interface elements for using with option CopySearchTextToClip.</li>
+<li>Added: Section [HotKeys]: Feature to start associated application with hot key for file which is opened in the Lister.</li>
+</ul>
+
+<span class="indent">[0.6.0.0] [16 Oct 2006]</span>
+<ul type="square" class="list">
+<li>Added: Key [Options], CopySearchTextToClip: Possibility copy to clipboard text from field “Find text” when executing in “Find Files” dialog.</li>
+<li>Added: Support for relative paths in file names.</li>
+<li>Fixed: Key [Options], CloseLister=1 now works for quick view.</li>
+<li>Fixed: Now Lister close if CloseLister=1 and IfIsExtOnly=1.</li>
+<li>Changed: Changed plugin name to “AppLoader”.</li>
+</ul>
+
+<span class="indent">[0.5.0.0] [03 Oct 2006]</span>
+<ul type="square" class="list">
+<li>Added: Support of environment variables like %COMMANDER_PATH%.</li>
+<li>Added: Key [Options], UseTCExtensions: Using section Extensions from Total Commander configuration file.</li>
+<li>Changed: Now using key [Options], DefaultEditor instead key [Editor], Path.</li>
+</ul>
+
+<span class="indent">[0.4.0.0] [20 Aug 2006]</span>
+<ul type="square" class="list">
+<li>Added: Key [Options], ScrollLockControl.</li>
+<li>Added: Keys group in section [Options] for defining of execute conditions: FindFiles, SyncDirs, TCWindow, QuickView, Lister4.</li>
+<li>Added: Keys description inside configuration file.</li>
+<li>Fixed: Fixed bug when crush if execute with quick view.</li>
+<li>Fixed: Fixed bug when application receive file name with not right extension.</li>
+</ul>
+
+<span class="indent">[0.3.0.0] [04 Aug 2006]</span>
+<ul type="square" class="list">
+<li>Added: Key [Options], IfIsExtOnly.</li>
+<li>Changed: Using CreateProcess instead WinExec to run application.</li>
+<li>Fixed: Endless loop if CloseLister=0, NextPlugin=1 and file can't to be open in other plugin.</li>
+</ul>
+
+<span class="indent">[0.2.0.0] [02 Aug 2006]</span>
+<ul type="square" class="list">
+<li>Added: Key [Options], ModalOnly.</li>
+<li>Added: Key [Options], CloseLister.</li>
+<li>Added: Key [Options], NextPlugin.</li>
+<li>Added: Association application by file extension.</li>
+<li>Added: DetectString "MULTIMEDIA".</li>
+</ul>
+
+<span class="indent">[0.1.0.0]</span>
+<ul type="square" class="list">
+<li>First version.</li>
+</ul>
+
+</div>
+</font>
+</body>
+</html>

@@ -1,0 +1,911 @@
+Imagine - What's new?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+v2.3.0, Oct 25 2025
+ - Added: ARM64 version available
+ - Added: 'Edit' button in metadata information dialog
+ - Added: Save without re-encoding for JPEGs with no pixel changes
+ - Added: Support for comment metadata information
+ - Added: Support for some non-standard BMP formats
+ - Fixed: IPTC attribute is not added in the column tab of browser preferences
+ - Fixed: '*' does not appear in the window caption for modified file
+ - Fixed: Rewritten ZSoft PC Paintbrush encoder/decoder
+ - Fixed: Some XPM errors
+ - Fixed: Some Flic errors
+ - Fixed: Some skins cannot be applied
+ - Fixed: Error loading zip file thumbnail in Total Commander Lister plugin
+
+v2.2.2, Sep 24 2025
+ - Fixed: Crash when closing browser window
+
+v2.2.1, Sep 23 2025
+ - Fixed: Abnormal termination of the browser window
+ - Fixed: Column widths set by pressing Ctrl+'+' in the browser are not saved
+ - Fixed: Information dialog crash in JBIG plugin
+
+v2.2.0, Sep 21 2025
+ - Added: Metadata support in status bar
+ - Added: Customizing browser columns
+ - Added: 'Use multithreading when available during encoding/decoding' option
+ - Added: 'Add archive files when loading directory tree' option
+ - Added: Support for metadata, frames, pages and file type in browser columns
+ - Added: Support for metadata, frames and pages in browser status bar
+ - Added: Archive files appear identical to directories in the browser
+ - Added: 'Reset all' button in the Save Options dialog
+ - Added: Support saving as JPEG XL
+ - Added: Support saving as JBIG
+ - Added: 'Lossless' option in AVIF save options
+ - Added: Changed the icons of supported files in the browser
+ - Added: 24x24 command bitmap for High-DPI environment
+ - Added: 'Print size' in Image Information dialog
+ - Added: 'Use skin' option in Preferences
+ - Added: GPS degrees, minutes, and seconds can be translated
+ - Added: Automatically rename files when pasted into the same directory
+ - Fixed: When saving a file, the file list sometimes did not update
+ - Fixed: Sometimes changing the browser view mode does not work properly
+ - Fixed: During mouse crop, lines are not drawn at the right and bottom ends
+ - Fixed: Thread error when saving a file
+ - Fixed: Thread error when loading JPEG XL
+ - Fixed: Icon error when starting in full screen and then restoring to window
+ - Fixed: Browser directory items appear incorrectly sometimes
+ - Fixed: Browser thumbnail icons not displayed in Windows 2000/NT 4.0
+ - Fixed: Hangs that occur in Color Corrections on Windows 9x
+ - Fixed: Abnormal termination error in pop-up image window in Windows 95
+ - Fixed: Abnormal termination error in About dialog
+
+v2.1.1, Aug 03 2025
+ - Fixed: VirusTotal's false positives
+
+v2.1.0, Aug 02 2025
+ - Added: Customizing caption format of viewer window
+ - Added: Save 32-bit alpha blended AVIF
+ - Added: Save animated AVIF
+ - Added: Exif support when saving to AVIF
+ - Added: Support for DICOM information in Batch rename
+ - Added: 'Show information tooltip' option in browser Preferences
+ - Added: Support for DDS in UYVY, YUY2 formats
+ - Fixed: Empty type list in Save as dialog of Animation Editor
+ - Fixed: Some ICC Profile transformation errors
+ - Fixed: Failed to load very large image
+ - Fixed: Error loading SVG file starting with UTF-8 BOM
+ - Fixed: Some JPEG 2000 errors
+ - Fixed: Some HDR errors
+ - Fixed: Flickering when selecting a rectangular area with the mouse
+ - Fixed: 'Hide mouse cursor' option does not work properly in full screen
+ - Fixed: Full screen scroll bar error
+ - Fixed: Error loading some Old JPEG compressed TIFF files
+ - Fixed: Does not run on Windows NT 4.0
+ - Fixed: Pages with only one frame are not treated as directories (wcx plugin)
+
+v2.0.2, Jul 05 2025
+ - Added: Copy alpha channel to clipboard
+ - Added: Support saving as AVIF
+ - Fixed: JPEG load error on Windows XP x64 Edition
+ - Fixed: Error displaying 32-bit BMP without alpha value
+ - Fixed: Some files in the browser do not display tooltips
+
+v2.0.1, Jun 07 2025
+ - Fixed: Improved file saving speed
+ - Fixed: Performance improvement through use of multithreading (AVIF plugin)
+ - Fixed: Some JPEG 2000 errors
+ - Fixed: Some AVIF errors
+ - Fixed: Some DDS errors
+ - Fixed: Rewritten Windows or OS/2 Bitmap encoder/decoder
+ - Fixed: Rewritten Autodesk Flic Animation encoder/decoder
+
+v2.0.0, May 03 2025
+ - Added: Support for IPTC/DICOM information in content plugin
+ - Added: View GPS and Thumbnail information in Exif dialog
+ - Added: Support for DICOM compressed in Deflate format
+ - Added: Support for DICOM compressed in Lossless JPEG format
+ - Added: 'Also shows empty values' option in metadata information dialog
+ - Added: Support for 'Bottom' option in toolbar preferences
+ - Fixed: Large WebP files take a long time to load
+ - Fixed: Some AVIF errors
+ - Fixed: Some PPM errors
+ - Fixed: Do not output when the value of the DICOM tag is empty
+ - Fixed: Unsupported Exif in some AVIF
+ - Fixed: Shell extension is registered even though the program bits and
+          Windows bits are different
+
+v1.9.0, Apr 12 2025
+ - Added: Support for DICOM metadata information
+ - Added: Support for lossless JPEG
+ - Fixed: Rewritten DICOM decoder
+ - Fixed: Memory leak when rotating an image
+ - Fixed: Error loading CMYK color PSD file with 16 bits per channel
+ - Fixed: Error with TIFF without PHOTOMETRIC tag
+ - Fixed: Problem with installer overwriting existing ini file
+
+v1.8.3, Mar 02 2025
+ - Fixed: Translation target text is not displayed properly in the translator
+ - Fixed: Error that occurs when LatitudeRef is 'S' or LongitudeRef is 'W' in
+          Location Information
+
+v1.8.2, Mar 01 2025
+ - Added: Enable translation of texts in the Save Options dialog
+ - Fixed: Error loading TIFF with CMYK color containing alpha channel
+ - Fixed: Re-aligning the IDs of translatable texts
+
+v1.8.1, Feb 15 2025
+ - Fixed: Rewritten JPEG 2000 encoder/decoder
+ - Fixed: Rewritten PBM/PGM/PPM encoder/decoder
+ - Added: Support for PFM (Portable Floatmap) file format
+ - Added: Support for PAM (Portable Arbitrary Map) file format
+ - Fixed: Exif information not displayed in Content plugin
+ - Fixed: Error loading ICC Profile in JPEG file with CMYK color space
+ - Fixed: When loading a small image, the menu appears in two lines
+
+v1.8.0, Jan 31 2025
+ - Fixed: Rewritten TIFF encoder/decoder
+ - Fixed: Improved metadata information dialog
+ - Added: Support for Exif in WebP
+ - Added: Support for ICC Profile in WebP
+ - Added: Save animated WebP
+ - Added: Support for Exif in BPG
+ - Added: Support for ICC Profile in BPG
+ - Added: Support for JPEG 2000 codec in TIFF (requires JPEG 2000 plugin)
+ - Added: Support for JBIG codec in TIFF (requires JBIG plugin)
+ - Fixed: Problem with reading only part of Exif
+ - Fixed: Improved speed of 'Count colors' in 'Image Information' dialog
+
+v1.7.3, Jan 04 2025
+ - Added: UTF-8 encoding support in Exif/IPTC
+ - Added: Lossless encoding support for WebP plugin
+ - Fixed: Some PNG errors in Total Commander Lister
+ - Fixed: Color error when saving GIF
+ - Fixed: Improved loading speed of interlaced images
+ - Fixed: Performance improvement for JXL plugin
+ - Fixed: 'Set Transparency' does not work within the Animation Editor
+ - Fixed: Improved save options dialog
+
+v1.7.2, Dec 22 2024
+ - Fixed: Error installing 32-bit unicode version of Content plugin
+ - Fixed: Some PNG errors
+
+v1.7.1, Dec 07 2024
+ - Added: Content plugin for Total Commander (Imagine.wdx)
+ - Added: Support for PIC (Dr. Halo Image) file format
+ - Added: Support for CUT (Dr. Halo Clipping Image) file format
+ - Added: Support for PAL (Dr. Halo Palette) palette file format
+ - Fixed: Command line parameter 'capture' not working
+
+v1.7.0, Oct 20 2024
+ - Changed: Menu - 'Set Transparency'
+ - Added: Support for text and image elements in SVG plugin
+ - Fixed: 32-bit alpha blended image clipboard copy error
+ - Fixed: Color rendering error in AVIF plugin
+ - Removed: Warning when saving a 32-bit image without alpha as a 24-bit image
+ - Removed: Menu - 'Remove Transparency'
+
+v1.6.0, Aug 17 2024
+ - Added: Menu - 'Color Corrections'
+ - Added: '--overwrite' sub-parameter in /save command line parameter
+ - Added: Saving to JPC, JP2, J2K (JPEG 2000 Wavelet) file format
+ - Added: Transparency for JPC, JP2, J2K (JPEG 2000 Wavelet) file format
+ - Fixed: 24-bit transparent image error
+ - Fixed: Import error in batch conversion
+ - Fixed: Frame display time in Frame Properties dialog of Animation Editor
+
+v1.5.5, Jul 13 2024
+ - Added: Menu - 'Save Selection as'
+
+v1.5.4, Jun 23 2024
+ - Fixed: Error in the 'Check for Update' menu
+
+v1.5.3, May 21 2024
+ - Fixed: Error loading grayscale JPEG with orientation tag in Exif
+ - Fixed: Abnormal termination when calling the context menu for a file with
+          access denied
+ - Fixed: Some 1-bit images change to 8-bit when saved as GIF
+
+v1.5.2, Mar 27 2024
+ - Fixed: Problem with unsupported file at the beginning or end of the file
+          list
+ - Fixed: Eliminate XBM/XPM security vulnerabilities
+
+v1.5.1, Mar 02 2024
+ - Added: Zoom factor that fills the work area in zoom in/out
+ - Added: Menu - 'Zoom to Desktop'
+ - Fixed: Rewritten DDS decoder
+ - Fixed: When navigating to the next/previous file with the mouse wheel,
+          multiple message boxes appear at the first/last file
+ - Fixed: Filename not added when starting a slide show using drag and drop
+ - Fixed: Ordering issue when sorting a list of files by name
+
+v1.5.0, Feb 18 2024
+ - Added: Menu - 'Create Panorama Image'
+ - Added: Copy HTML color code to clipboard when clicking on pixel color
+          information status bar
+ - Added: Improved functionality of the Mask window and the Preview window of
+          the Open dialog
+ - Added: '--showprogress' sub-parameter in /save command line parameter
+ - Changed: Format of window caption: 'Filename - Imagine'
+ - Fixed: Controls overlap in 'Open' dialog in High-DPI environment
+
+v1.4.1, Feb 04 2024
+ - Added: Display alpha value in pixel color information
+ - Fixed: Rewritten XCF decoder
+ - Fixed: Some GIF files are not displayed properly
+ - Fixed: When saving a clipboard image as a file, it is not updated with the
+          file information
+ - Fixed: Browser's file sorting triangle is incorrectly positioned and sized
+          in High-DPI environment
+ - Fixed: Filename of thumbnail in the browser is not displayed completely in
+          High-DPI environment
+
+v1.4.0, Jan 22 2024
+ - Fixed: Zoom error when disabling the 'Display image while loading' option
+ - Fixed: Only text is pasted into other applications via the clipboard
+ - Fixed: Command icon appears small in High-DPI environment
+
+v1.3.9, Jan 13 2024
+ - Added: Support for QOI (Quite OK Image) file format
+ - Added: Support for CLIP (CLIP STUDIO PAINT) file format (plugin)
+ - Added: 'ICC Profile' button in Image Information dialog
+ - Added: Menu - 'Forward folder'
+ - Added: Menu - 'Backward folder'
+ - Added: System menu - 'Always on Top'
+ - Fixed: Zoom factor returns to 100% when minimized
+ - Fixed: Font settings sharing issue between High-DPI and Low-DPI
+ - Fixed: Incorrect size of File Association dialog in High-DPI environment
+
+v1.3.8, Dec 16 2023
+ - Fixed: Incorrect number of copies printed when printing
+ - Fixed: Rewritten PSD decoder
+ - Fixed: Exif saving error in JPEG
+ - Fixed: Abnormal termination when cropping
+ - Added: APNG filename extension to PNG format
+
+v1.3.7, Dec 09 2023
+ - Fixed: Filename extension association issues in Windows 8 and later
+ - Fixed: Some GIF errors
+ - Fixed: Performance improvement through use of multithreading
+          (JXL, TGS plugin)
+
+v1.3.6, Nov 22 2023
+ - Fixed: Rewritten GIF encoder/decoder
+
+v1.3.5, Nov 11 2023
+ - Fixed: Misdiagnosis in some antivirus programs (no longer packed with UPX)
+
+v1.3.4, Oct 28 2023
+ - Added: Support for TGS (Telegram Animated Sticker) / dotLottie Animation
+          file format (plugin)
+
+v1.3.3, Oct 23 2023
+ - Fixed: Some APNG errors
+
+v1.3.2, Oct 21 2023
+ - Added: Support for ICC Profile in PNG
+ - Added: Support for Exif in PNG
+
+v1.3.1, Oct 08 2023
+ - Fixed: Manipulating a 32-bit alpha blended image makes it 100% transparent
+ - Fixed: Filename display issue in full screen
+ - Fixed: Small palette edit dialog in High-DPI environment
+
+v1.3.0, Oct 05 2023
+ - Added: Support for ICC Profile in JPEG
+          (Options->Preferences->Color Management)
+ - Fixed: Problem with the number of plugins not exceeding 16
+
+v1.2.0, Sep 30 2023
+ - Added: 'Use predefined' in 'Location Information'
+ - Added: Support for BPG (Better Portable Graphics) file format (plugin)
+ - Added: Support for Exif in HEIF plugin
+
+v1.1.9, Sep 23 2023
+ - Added: Support for multiple pages in Packer plugin for Total Commander
+          (Imagine.wcx)
+
+v1.1.8, Sep 17 2023
+ - Added: Support for JXL (JPEG XL) file format (plugin)
+
+v1.1.7, Sep 04 2023
+ - Added: Support for HEIF, HEIC (High Efficiency Image File Format)
+          file format (plugin)
+ - Added: Menu - 'Location Information'
+ - Added: 'Location information' settings at 'Program' tab of preferences
+          dialog
+
+v1.1.6, Aug 08 2023
+ - Added: Support for SVG, SVGZ (Scalable Vector Graphics) file format (plugin)
+ - Fixed: Setting wallpaper in Windows 7
+
+v1.1.5, Aug 05 2023
+ - Added: Support for AVIF (AV1 Image Format) file format (plugin)
+ - Fixed: Small icons in High-DPI environment
+
+v1.1.4, Apr 04 2022
+ - Added: Support for ICNS (Apple Icon Image Format) file format
+
+v1.1.3, Feb 17 2022
+ - Added: Improved JPEG encoding/decoding speed in 64-bit version
+          (using CPU SIMD instructions via libjpeg-turbo)
+
+v1.1.2, Feb 13 2022
+ - Added: Plugin interface - 'jpeg_mem_src'
+
+v1.1.1, Jan 02 2020
+ - Added: Toolbar preferences - 'Button dimensions'
+
+v1.1.0, Jul 31 2017
+ - Fixed: Support for High-DPI awareness
+ - Added: Command line parameter 'crop'
+ - Added: Transparency for XPM
+
+v1.0.9, Nov 20 2012
+ - Added: Support for Digital camera raw image file format (plugin)
+ - Added: Batch rename
+ - Added: Support for double click action in mouse mode
+ - Added: Exif/IPTC/XMP/Comment are preserved while saving to JPEG file format
+ - Added: IPTC information
+ - Added: File type can be selected in save dialog via typing extension
+ - Added: Support for WebP (Google WebP Format) file format (plugin)
+ - Added: Support for HDR (Radiance High Dynamic Range Image) file format
+ - Added: Support for EXR, SXR, MXR (OpenEXR Image) file format (plugin)
+ - Added: Support for DICOM, DCM (DICOM Image) file format
+ - Added: Support for PDN (Paint.NET Image) file format
+ - Added: Command line parameter 'save'
+ - Added: Command line parameter 'jpegtran'
+ - Added: Percentage-based resizing is available in batch conversion
+ - Added: Percentage-based resizing is available in command line
+ - Added: Cropping supports undo, transparency and multiple frames
+ - Added: 'Command line parameters' topic in help file
+ - Added: 'Open with' in context menu of viewer
+ - Added: Plugins in subdirectories can be loaded
+ - Added: Archive icon in browser
+ - Fixed: Changed filenames of 64-bit version
+ - Fixed: Changed filename extension of plugin (plg,plg64)
+ - Fixed: Loading bug with files have '%' in their names
+ - Fixed: Browser refresh crash bug
+ - Fixed: Browser thumbnail cache crash bug
+ - Fixed: Browser view type change crash bug
+ - Fixed: Browser icon spacing problem in Windows 95
+ - Fixed: Archive file browsing crash bug
+ - Fixed: Opening archive file in network folder bug
+ - Fixed: Long delay with of network folder
+ - Fixed: Wrong detection of some ZIP files bug
+ - Fixed: Long MRUD item bug
+ - Fixed: Empty language selection bug
+ - Fixed: Duplicate items in shell extension context menu bug
+ - Fixed: Duplicate items in archive file bug
+ - Fixed: PBM/PGM/PPM wrong display bug
+ - Fixed: 'Exif Information' menu is integrated into 'Metadata information'
+ - Fixed: Corrections to Exif texts
+ - Fixed: Mouse wheel bug in Vista/Windows 7
+ - Fixed: 64-bit slide show executable crash bug
+ - Fixed: Changed name from 'Animation Factory' to 'Animation Editor'
+
+v1.0.8, Sep 24 2011
+ - Added: Menu - 'JPEG lossless rotation'
+ - Added: Page navigator for multiple page images
+ - Added: CHM for help file
+ - Added: 'Application' tab in preferences dialog
+ - Added: Option 'Individual option per user'
+ - Added: Slide show options can be saved
+ - Added: Auto folder creation in batch conversion and capture screen
+ - Added: Support for WPG (WordPerfect Graphics) file format
+ - Added: Keep transparency when resized
+ - Added: ARJ, LZH, EGG, TAR, GZ, BZ2, ISO, CAB file support (plugin)
+ - Added: Private options for toolbars
+ - Added: Icons for 'Open with' menu items
+ - Fixed: Rename/Delete bug in folder tree
+ - Fixed: Scroll bar bug
+ - Fixed: Slide show executable bug in 64-bit version
+ - Fixed: Full screen mode in Total Commander Lister bug
+
+v1.0.7, Jan 31 2010
+ - Added: Menu - 'Animation factory'
+ - Added: Command line parameter 'anim'
+ - Added: Print window is fully reformed
+ - Added: Menu - 'Show folders'
+ - Added: Resize selection area
+ - Added: 'Drag file' for mouse behavior
+ - Added: Copying to clipboard with transparency
+ - Added: 'View menu bar' can be saved
+ - Added: Parameter in 'Open with' can be customized
+ - Added: Latest used mouse mode can be saved
+ - Added: CBZ, CBR, CB7 extensions are supported
+ - Fixed: Multiple display monitor problem
+ - Fixed: Filename extension association problem in Vista/Windows 7
+ - Fixed: File rename/delete bug in Vista/Windows 7
+ - Fixed: Enhancement in ZIP handling routine
+ - Fixed: Next/Previous File bug
+ - Fixed: Shell extension bug
+ - Fixed: Browser bug in Windows 2000
+ - Fixed: Status bar bug in Vista/Windows 7
+ - Fixed: Batch conversion output filename bug
+ - Fixed: GIF bug
+ - Fixed: Full screen mode bug
+ - Fixed: Wrong diagnosis in Avira Antivir
+ - Removed: Extracting thumbnail in shell extension
+
+v1.0.6, Jul 23 2009
+ - Added: File delete without confirmation option
+ - Added: Context menu for toolbar and status bar
+ - Added: ALZ file support (plugin)
+ - Fixed: File list bug
+ - Fixed: Slide show bug
+
+v1.0.5, Jul 05 2009
+ - Added: ZIP file support
+ - Added: RAR file support (plugin)
+ - Added: 7Z file support (plugin)
+ - Added: HV3 file support (plugin)
+ - Added: Command in batch conversion
+ - Added: Menu - 'Open clipboard'
+ - Added: Option 'Hide scroll bars' in full screen
+ - Added: Browser thumbnail caching
+ - Added: Slide show effect
+ - Added: Icons in menu items
+ - Added: Centered zoom focus
+ - Added: Browser file list is more decorated
+ - Added: Transparency for browser preview
+ - Added: Internal optimizing with transparency routine
+ - Added: Column header can be clicked to sort file list in browser window
+ - Added: Column header position can be saved via 'Save position'
+ - Added: Command line parameter 'assocext' and 'dissocext'
+ - Added: Command line parameter 'regshlext' and 'unregshlext'
+ - Added: Confirm overwriting in batch conversion
+ - Added: History in copy dialog
+ - Added: Toolbar preferences - 'Wrap toolbar'
+ - Added: 'Dither output image' option in change color depth dialog
+ - Added: System menu - 'View menu bar'
+ - Added: Show current directory index in full screen
+ - Added: Support for MBM (Psion Series 5 Bitmap) file format
+ - Added: Old-JPEG TIFF compression method support
+ - Added: Unicode support for Total Commander plugins
+ - Fixed: Browser file list rename bug
+ - Fixed: Full screen mode bug
+ - Fixed: MRUD bug
+ - Fixed: Cursor bug
+
+v1.0.4, Nov 14 2008
+ - Added: Browser window is fully reformed
+ - Added: Context menu in browser window
+ - Added: Exif-based rotated image is loaded directly
+ - Added: Support for PNG-embedded Windows icon files
+ - Added: Select index of icon according to desktop color
+ - Added: Support for drag'n'drop in browser window and most of dialogs
+ - Added: Support for list file in Slide show
+ - Added: Command line parameter 'slide'
+ - Added: Menu - 'Extract current page'
+ - Added: Menu - 'Extract all pages'
+ - Added: Menu - 'Crop'
+ - Added: Menu - 'Visit website'
+ - Added: Menu - 'Check for update'
+ - Added: New user-defined menu template
+ - Added: 'Center window' can be used with 'Don't fit window' option
+ - Added: BMP 32 bit alpha value
+ - Fixed: Exif-based rotated image scroll bar bug
+ - Fixed: Full screen mode bug
+ - Fixed: MRUD bug
+ - Fixed: JPEG bug
+ - Fixed: GIF bug
+ - Fixed: PCX bug
+
+v1.0.3, May 24 2008
+ - Added: Slide show
+ - Added: File type 'Options' in Batch conversion & Capture screen dialog
+ - Added: Unique icons for each file type
+ - Removed: Menu - 'Export to AVI'
+
+v1.0.2, May 04 2008
+ - Added: Support for APNG (Animated Portable Network Graphics) file format
+ - Added: Tiled view (allows to check textures for seamless tiling, very useful
+          for game developers/modders)
+ - Added: Menu - 'Version history'
+ - Added: Option 'Display load time'
+ - Added: Printing multiple page images
+ - Added: Improved scroll bar
+ - Fixed: Full screen mode at startup bug
+ - Fixed: Toggle fit bug
+ - Fixed: Browser window clipboard bug
+ - Fixed: Multiple page image bug
+
+v1.0.1, Mar 09 2008
+ - Added: Option 'Toggle fit'
+ - Fixed: WMF/EMF zoom bug
+ - Fixed: Window preferences dialog bug
+
+v1.0.0, Mar 02 2008
+ - Added: Capture screen
+ - Added: Customizable toolbar skin
+ - Added: Option 'Center window'
+ - Added: Option 'Fit window'
+ - Added: Option 'Fit image'
+ - Added: Option 'Cycle through end/begin of folder'
+ - Added: Option 'Hide cursor in full screen'
+ - Added: 'Fit image' routines fully rewritten
+ - Added: English language template fully rewritten
+ - Added: Translation information in language selection dialog
+ - Added: Versioning changed from 4 to 3 digits
+ - Added: Dropped beta status
+ - Fixed: Keyboard shortcut bug
+ - Fixed: Total Commander Lister fit option bug
+ - Fixed: Browser preferences dialog bug
+ - Fixed: GIF bug
+ - Fixed: XPM bug
+
+v1.0.0.0 beta 10, Jan 13 2008
+ - Added: Changed license from Freeware to Donationware
+ - Added: Option 'Always on top'
+ - Fixed: Save dialog bug
+
+v1.0.0.0 beta 9, Dec 09 2007
+ - Added: Improved progress bar
+ - Added: Menu - 'Keyboard shortcuts'
+ - Added: Command line parameter 'depth'
+ - Added: Command line parameter 'filter'
+ - Added: Command line parameter 'resize'
+ - Added: Command line parameter 'wallpaper'
+ - Added: Option 'Show full path in title bar'
+ - Added: Option 'Add extension with capital letters'
+
+v1.0.0.0 beta 8, Nov 20 2007
+ - Fixed: BMP RLE encoding bug
+ - Fixed: Saving to BMP with packer plugin
+
+v1.0.0.0 beta 7, Nov 09 2007
+ - Added: Dithering for 1/4 bit color depth conversion
+ - Added: More accurate colors on 8 bit color desktops
+ - Added: Improved status bar
+ - Fixed: Progress bar bug
+
+v1.0.0.0 beta 6, Oct 07 2007
+ - Added: Improved browser loading speed
+ - Fixed: Printing bug
+ - Fixed: TGA grayscale image bug
+ - Fixed: Palette import bug
+ - Fixed: Browser window bug
+
+v1.0.0.0 beta 5, Jun 30 2007
+ - Added: 'Command history' dialog
+ - Added: Improved status bar
+
+v1.0.0.0 beta 4, May 06 2007
+ - Added: Improved filter browser preview speed
+ - Added: Option 'Undo' buffer
+ - Added: Option 'Display frequency per second'
+ - Added: Additional menus
+ - Fixed: Scroll bug
+
+v1.0.0.0 beta 3, Dec 02 2006
+ - Added: Support for Total Commanders plugin function 'ListLoadNext'
+
+v1.0.0.0 beta 2, Nov 04 2006
+ - Added: Option 'Full screen at startup'
+ - Added: Command line parameter 'fullscreen'
+
+v1.0.0.0 beta 1, Oct 22 2006
+ - Added: Batch conversion
+ - Added: Improved shell extension, all frames of an animation are shown
+ - Added: Command 'Cut'
+ - Fixed: Status bar tooltip bug
+
+v0.9.7.0, Sep 07 2006
+ - Added: Alpha blend drawing routine rewritten
+ - Added: Display HTML color code as pixel color
+ - Fixed: 16 BPP 5:6:5 image clipboard bug
+ - Fixed: XNM bug
+ - Fixed: Transparent background mask bug
+ - Fixed: File list bug
+
+v0.9.7.0 beta 13, Aug 19 2006
+ - Added: TWAIN support
+ - Added: Improved print dialog
+
+v0.9.7.0 beta 12, Jul 29 2006
+ - Added: Support for ICL (Icon Library) file format
+ - Fixed: 'Rotate according to Exif' in shell extension
+
+v0.9.7.0 beta 11, Jul 22 2006
+ - Added: Support for MNG (Multiple Network Graphics) file format
+ - Fixed: Crop bug
+
+v0.9.7.0 beta 10, Jul 17 2006
+ - Added: Image information - Show DPI (Dots Per Inch) value
+ - Added: Cropping by scrolling
+ - Fixed: Current directory index bug
+
+v0.9.7.0 beta 9, Jul 08 2006
+ - Added: Commands 'FileFirst', 'FileLast'
+ - Added: Improved status bar - Optionally show current directory index
+ - Added: Improved mouse configuration
+
+v0.9.7.0 beta 8, Jun 08 2006
+ - Added: File open dialog - Preview image
+ - Added: Improved status bar
+ - Fixed: Icon bug in preference dialog
+
+v0.9.7.0 beta 7, Mar 28 2006
+ - Added: Browser thumbnail size configurable
+ - Added: Shell extension - Menu image size configurable
+ - Added: Command line parameter support
+
+v0.9.7.0 beta 6, Mar 04 2006
+ - Added: Support for JBIG (Joint Bi-level Image Experts Group) format saving,
+          requires additional plugin
+ - Added: Images added to preferences dialog tabs
+
+v0.9.7.0 beta 5, Feb 22 2006
+ - Added: GIF routine rewritten
+ - Added: Animation preferences
+
+v0.9.7.0 beta 4, Feb 01 2006
+ - Added: Improved browser loading speed
+ - Added: Browser - Directory tree can be hidden
+ - Added: Browser preferences - 'Rotate according to Exif'
+ - Added: Status bar preferences - Drag status bar items with mouse
+
+v0.9.7.0 beta 3, Jan 25 2006
+ - Added: Status bar preferences
+ - Added: Improved 'Display while loading' function, no resizing after loading
+ - Added: Improved browser window
+ - Added: Transparency for thumbnails
+ - Added: Image information - Mask function can show 32 bit alpha value
+ - Added: Image information - File size information
+ - Added: Auto change zoom factor when entering full screen mode
+ - Fixed: PNG bug (16 bits per sample)
+ - Fixed: TIFF bug (16 bits per sample and tiled image)
+ - Fixed: PCX bug
+ - Fixed: Toolbar and status bar disappearing in full screen mode
+
+v0.9.7.0 beta 2, Jan 08 2006
+ - Added: Menu - 'Open with'
+ - Added: Improved printing
+
+v0.9.7.0 beta 1, Dec 19 2005
+ - Added: Mouse preferences
+ - Added: Command 'Lock zoom'
+
+v0.9.0.0, Sep 16 2005
+ - Added: Unicode version available
+ - Added: Plugin SDK updated, v0.1.0.5
+ - Added: Built-in support for several file formats, previous plugins obsolete
+ - Added: Improved shell extension
+ - Added: Redesigned preferences dialog
+ - Added: Option 'Ignore errors'
+ - Added: Option 'MRUD count'
+ - Added: Redesigned browser window
+ - Added: Menu in browser window
+ - Fixed: Shell extension crash bug
+ - Fixed: Filter browser dialog bug, Windows XP
+ - Fixed: Metafile bug
+ - Fixed: Preferences dialog font bug
+ - Fixed: Launch bug, Windows 95
+ - Fixed: Flickering Total Commander Lister window after size change
+
+v0.9.0.0 beta 12, Jul 15 2005
+ - Added: Support for WMF (Windows Metafile) file format
+ - Added: Support for EMF (Windows Enhanced Metafile) file format
+ - Added: Zoom factor configurable
+ - Added: Command 'Create multiple page'
+ - Fixed: Scroll bug
+
+v0.9.0.0 beta 11, Jul 06 2005
+ - Added: Support for MAC, MACP (Apple Macintosh MacPaint) file format
+ - Added: Support for RLA (Wavefront Raster Image) file format
+ - Added: Command 'Previous frame'
+ - Added: Command 'Rename'
+ - Added: Option 'Only one instance'
+ - Fixed: Exif bug
+
+v0.9.0.0 beta 10, Apr 10 2005
+ - Added: Support for XCF (GIMP Bitmap) file format
+ - Fixed: Transparent image scroll bug
+ - Fixed: Thumbnail background color bug
+ - Fixed: 32 bit clipboard paste bug
+ - Fixed: Exif bug
+
+v0.9.0.0 beta 9, Mar 10 2005
+ - Added: Plugin SDK updated, v0.1.0.2
+ - Added: Support for PSP (Paint Shop Pro Image) file format
+ - Added: Support for XBM (X10/X11 Bitmap) file format
+ - Added: Support for XPM (X11 Pixmap) file format
+ - Added: Support for ANM (DeluxePaint Animation) file format
+ - Added: Zoom/Fit routine rewritten
+ - Added: More internal optimizing
+ - Added: Resample filter for resizing
+ - Added: Option 'Rotate according to Exif'
+ - Added: Interface 'Font type' configurable
+ - Added: Browser tooltip
+ - Fixed: Flickering screen
+ - Fixed: Folder including more than 1024 image files bug
+ - Fixed: Rotation bug
+ - Fixed: Shortcut dialog bug
+
+Version 0.9.0.0 beta 8 'Feb 10 2005
+ - Added: Plugin SDK available, v0.1.0.0
+ - Added: Support for DDS (DirectDraw Surface) file format
+ - Added: Improved preview color quality
+ - Added: Some internal optimizing
+ - Added: Application icon changed
+ - Added: Toolbar color changed
+ - Fixed: Transparent pixel color bug, Windows 9x
+ - Fixed: Browser - Treeview icon bug
+ - Fixed: Shell extension crash bug
+ - Fixed: CMYK TIFF display bug
+
+v0.9.0.0 beta 7, Jan 22 2005
+ - Added: Support for Total Commander v6.5 thumbnail mode
+
+v0.9.0.0 beta 6, Jan 08 2005
+ - Added: Support for antialiasing
+
+v0.9.0.0 beta 5, Dec 27 2004
+ - Added: Shell extension context menu (preview images via Explorer
+          context menu)
+ - Added: Save toolbar settings to Imagine.ini
+ - Added: Save shortcut data to Imagine.ini
+
+v0.9.0.0 beta 4, Dec 10 2004
+ - Added: Imagine.wlx renamed to Imagine.dll
+ - Added: Browser window decorated
+ - Added: Several file operations (Copy/Move)
+ - Added: Resizing (yet primitive)
+ - Added: Printing (yet primitive)
+ - Added: Help file (yet primitive)
+
+v0.9.0.0 beta 3, Aug 28 2004
+ - Added: Browser window
+ - Added: Menu - 'Supported file formats'
+ - Added: Packer plugin for Total Commander can read Imagine.ini
+ - Added: Window preferences
+
+v0.9.0.0 beta 2, Aug 14 2004
+ - Added: Packer plugin for Total Commander (Imagine.wcx)
+ - Added: Several translations
+ - Added: Option 'MRUD'
+ - Added: Option 'Center window'
+ - Added: Option 'Fit to image'
+
+v0.9.0.0 beta 1, Aug 06 2004
+ - Added: Support for PIC, CEL (Autodesk Animator PIC) file format
+ - Added: Filename extension association dialog restructured
+ - Added: Run standalone executable without arguments
+ - Added: Command 'Save'
+ - Added: Command 'Close'
+ - Added: Command 'Clear clipboard'
+
+v0.8.4.0, Jul 26 2004
+ - Added: Toolbar, customizable
+ - Added: Command 'Import palette'
+ - Fixed: Delete bug
+
+v0.8.4.0 beta 3, Jul 14 2004
+ - Added: Support for CDR, CDT, PAT, CMX (CorelDRAW Drawing) file format
+ - Added: Standalone executable
+ - Added: Command 'Set/Clear transparency'
+ - Added: Saving to interlaced PNG file format
+ - Added: TGA 32 bit alpha value
+ - Fixed: JPEG bug
+
+v0.8.4.0 beta 2, Mar 18 2004
+ - Added: 16 bit color depth conversion
+ - Added: Saving to Multiple Icon/Cursor file format
+ - Added: Show zoom factor for fitted image
+ - Added: Keyboard shortcuts configurable
+ - Added: More interface text translatable
+ - Added: Comments in language files
+ - Fixed: Multiple TIFF file format bugs
+
+v0.8.4.0 beta 1, Feb 26 2004
+ - Added: Multilingual support
+ - Added: Saving to progressive JPEG file format
+ - Added: Improved image information
+ - Added: File list sorting
+ - Added: Option 'Display while loading'
+ - Added: Option 'Delete to Recycle Bin'
+ - Added: Command 'Reopen'
+ - Added: Command 'Paste'
+ - Added: Shortcut for Preferences reverted to 'Alt+Enter'
+
+v0.8.0.0, Feb 07 2004
+ - Added: Support for DCX (Zsoft Multi-Page Paintbrush) file format
+ - Added: Support for WBMP, WAP, WBM (Wireless Bitmap) file format
+ - Added: Support for most common TIFF compression methods:
+          RAW, Packbits, CCITT, LZW, ZIP, JPEG, ThunderScan
+ - Added: Saving to TIFF file format
+ - Added: Support for Multiple page images (TIF, ICO, DCX)
+ - Added: Effect filter
+ - Added: Exif information
+ - Added: Full screen preferences
+ - Added: Information dialog restructured
+ - Added: Command 'Rotate free'
+ - Added: Command 'Export Palette'
+ - Added: Menu - 'Installed plugins'
+ - Added: Option 'Ask to overwrite file'
+ - Added: Option 'Don't notify end/begin of folder'
+ - Added: Zoom in/out using mouse wheel
+ - Added: Horizontal scrolling using mouse wheel
+ - Added: Zoom out beyond original image size
+ - Added: Improved refresh speed for zoomed images
+ - Added: Support for several palette file types
+ - Fixed: PCX bug
+ - Fixed: RLE bug
+
+v0.7.3.0, Jan 01 2004
+ - Added: Support for Zoom in/out
+ - Added: Support for drag'n'drop
+ - Added: Command 'Open'
+ - Added: Option 'Fit only big images' re-added
+ - Fixed: Images containing alpha value display bug
+ - Fixed: 32 bit BMP with color mask display bug
+ - Fixed: Properties dialog opening bug, Windows NT
+
+v0.7.0.1, Nov 24 2003
+ - Fixed: Runtime error, Windows XP
+
+v0.7.0.0, Nov 22 2003
+ - Added: Support for JBG (Joint Bi-level Image Experts Group) file format
+ - Added: Support for ICO (Windows Icon) file format
+ - Added: Support for CUR (Windows Cursor) file format
+ - Added: Support for ANI (Windows Animated Cursor) file format
+ - Added: Support for CLP (Windows Clipboard) file format
+ - Added: Support for RLE (Utah RLE) file format
+ - Added: Support for Imagine plugins
+ - Added: BMP and ICO files can be viewed with Imagine plugin
+ - Added: Save to FLIC file format
+ - Added: Animation file saving changed to 'Save as', removed some of
+          the export options
+ - Added: Option 'Center Image'
+ - Added: Menu restructured
+ - Added: Use left mouse button to acquire pixel color information
+ - Added: Use right mouse button to scroll
+ - Added: Command 'View Next/Previous' image
+ - Added: Changed location of INI file, now same folder as Imagine.wlx
+ - Fixed: Keyboard shortcuts, Windows 9x
+
+v0.6.0.0, Sep 06 2003
+ - Added: Support for RAS (Sun Raster Image) file format
+ - Added: Support for SGI, RGB, BW (Silicon Graphics Image) file format
+ - Added: Auto color conversion when saving file to different format
+ - Added: Command 'Change color depth'
+ - Added: Command 'Set as wallpaper'
+ - Added: Keyboard support for palette editing
+ - Added: Background preferences
+ - Fixed: Small scroll bug
+
+v0.5.0.0, Aug 10 2003
+ - Added: Status bar
+ - Added: Save options
+ - Added: Show progress (save file/modify image)
+ - Added: Several shortcuts
+
+v0.4.9.0, Aug 06 2003
+ - Added: Support for PBM (Portable Bitmap) file format
+ - Added: Support for PGM (Portable Graymap) file format
+ - Added: Support for PPM (Portable Pixelmap) file format
+ - Added: Support for PNG transparency
+
+v0.4.8.0, Aug 02 2003
+ - Added: Save to PNG file format
+
+v0.4.7.0, Aug 01 2003
+ - Added: Option 'Show transparency'
+ - Added: Support for PCD (Kodak PhotoCD) file format
+ - Added: Support for JPC, JP2, J2K (JPEG 2000 Wavelet) file format
+
+v0.4.1.1, Jul 28 2003
+ - Fixed: PNG bug
+
+v0.4.1.0, Jul 28 2003
+ - Added: Command 'Edit Palette'
+
+v0.4.0.0, Jul 24 2003
+ - Added: Option 'Fit only big images'
+ - Added: Command 'Vertical/Horizontal flip'
+ - Added: Command 'Grayscale'
+ - Added: Command 'Negative'
+ - Added: Command 'Swap colors'
+ - Added: Command 'Rotate'
+
+v0.3.7.0, Jul 22 2003
+ - Fixed: GIF bug
+ - Fixed: Scroll bug
+
+v0.3.0.0, Jul 16 2003
+ - First release
