@@ -1,0 +1,6 @@
+[plugininstall]
+description=DXF/DWG Viewer
+type=wlx
+file=dxfViewer.wlx
+defaultdir=dxfViewer
+version=1.0.1.0
